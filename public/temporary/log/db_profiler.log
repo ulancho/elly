@@ -1,0 +1,18 @@
+--------------------------------------  30.05.2018 15:47:19  ---------------------------------------
+---------------------------------  /new/?application@save_stages  ----------------------------------
+0.0007849	SELECT * FROM sp_user WHERE codeid='1' 
+0.000885 	SELECT * FROM application WHERE codeid='166' 
+0.0013959	UPDATE [application] SET [code_declaration] = '10037', [code_stage] = '2', [code_substage] = '0', [code_subapods] = '0', [code_result] = '1', [status_result] = '0', [code_user] = '0', [value] = '', [comment] = '12312', [date_system] = NULL WHERE codeid='166'
+0.0009942	SELECT text_result FROM view_application WHERE codeid=166
+--------------  Total DB time: 0.0040600299835205; Total PHP time: 0.040224075317383  --------------
+---------------------------  Memory: 506.9609375kb / Real memory: 512kb  ---------------------------
+
+--------------------------------------  30.05.2018 15:47:23  ---------------------------------------
+---------------------------------  /new/?application@save_stages  ----------------------------------
+0.000937 	SELECT * FROM sp_user WHERE codeid='1' 
+0.0009329	SELECT * FROM application WHERE codeid='166' 
+0.001456 	UPDATE [application] SET [code_declaration] = '10037', [code_stage] = '2', [code_substage] = '0', [code_subapods] = '0', [code_result] = '1', [status_result] = '0', [code_user] = '0', [value] = '', [comment] = '12312', [date_system] = NULL WHERE codeid='166'
+0.0010118	SELECT text_result FROM view_application WHERE codeid=166
+--------------  Total DB time: 0.0043377876281738; Total PHP time: 0.033428430557251  --------------
+---------------------------  Memory: 506.9609375kb / Real memory: 512kb  ---------------------------
+

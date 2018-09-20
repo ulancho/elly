@@ -1,0 +1,146 @@
+label {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+@media print {
+button {
+    display: none !important;
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+    box-sizing: border-box;
+}
+input,
+textarea {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    overflow:hidden !important;
+    resize:none !important;
+    width: 100%;
+}
+select {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 2 !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+.select2-selection--single {
+    border: none !important;
+    box-shadow: none !important;
+    padding-top: 3px!important;;
+    padding-right: 2px!important;;
+    padding-bottom: 2px!important;;
+    padding-left: 2px!important;;
+}
+.select2-selection__arrow{
+    display: none;
+}
+.risk_circle {
+    display: none;
+}
+label{
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 10pt!important;
+    margin-bottom: 2px;
+    font-style: normal;
+}
+body{font-size: 12px!important;}
+    .hideOnPrint {
+    display: none !important;
+}
+.showOnPrint {
+    display: block !important; word-wrap: break-word;
+}
+.page_print {
+    page-break-after: always;
+    page-break-inside: avoid;
+}
+table {
+    border: none!important;
+}
+.table>tbody>tr>td{
+    padding: 2px;
+}
+.no_print{
+  display: none!important;
+}
+.car_table{
+    width:98%!important;
+}
+.table>tbody>tr>td>select, .table>tbody>tr>td>input{
+    font-size: 11px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td,
+.table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    padding: 2px;
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.col-md-12 {
+    width:100%;
+    float: left;
+    }
+
+    .col-md-11 {
+    width:91.66666667%;
+    float: left;
+    }
+
+    .col-md-10 {
+    width:83.33333333%;
+    float: left;
+    }
+
+    .col-md-9 {
+    width:75%;
+    float: left;
+    }
+
+    .col-md-8 {
+    width:66.66666667%;
+    float: left;
+    }
+
+    .col-md-7 {
+    width:58.33333333%;
+    float: left;
+    }
+
+    .col-md-6 {
+    width:50%;
+    float: left;
+    }
+
+    .col-md-5 {
+    width:41.66666667%;
+    float: left;
+    }
+
+    .col-md-4 {
+    width:33.33333333%;
+    float: left;
+    }
+
+    .col-md-3 {
+    width:25%;
+    float: left;
+    }
+
+    .col-md-2 {
+    width:16.66666667%;
+    float: left;
+    }
+
+    .col-md-1 {
+    width:8.33333333%;
+    float: left;
+    }
+}

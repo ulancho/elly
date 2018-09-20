@@ -1,0 +1,58 @@
+#stickers {
+	position:fixed;
+	z-index: 1000;
+	bottom: 0px;
+	height: 157px;
+	width: 100%;
+	display:none;
+
+	background: #cedbe4 url('../../img/bgs/stickers-bg.png') left top repeat-x;
+}
+#stickers-trigger {
+	height: 20px;
+	width: 33px;
+	background: url('../../img/icons/stickers-hide-icon.png') right bottom no-repeat;
+	cursor:pointer;
+	position:absolute;
+	z-index: 1001;
+	left: 36px;
+	bottom: 0px;
+}
+#stickers-trigger:hover {
+	background: url('../../img/icons/stickers-hide-icon.png') top right no-repeat;
+}
+#stickers #stickers-trigger {
+	bottom: auto;
+	top: 1px;
+	background-position:left top;
+}
+#stickers #stickers-trigger {
+	background-position:left bottom;
+}
+
+.sticker-image {
+	background: #ddd;
+	padding: 10px 20px 10px 10px;
+	position:absolute;
+	z-index: 1001;
+	cursor:pointer;
+	box-shadow: 0 3px 6px #666;
+}
+#stickers .sticker-image {
+	width: 250px;
+}
+.sticker-image-order {
+	background: #ffdada;
+}
+.sticker-image-task {
+	background: #cbffc7;
+}
+.sticker-image-coordination {
+	background: #d8dcff;
+}
+
+.sticker-image .remove {
+	position:absolute;
+	right: 5px;
+	top: 5px;
+}

@@ -1,0 +1,291 @@
+﻿
+/* tree */
+
+.tree_org {    
+    /*height: 100%;*/
+    overflow: auto;
+}
+
+.tree_org ul {
+	padding-top: 20px; position: relative;
+    	padding-left: 0;
+	
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.tree_org > ul {
+    /*display: -moz-box;*/
+    padding-top: 0;
+}
+.tree_org li {
+    text-align: center;
+	list-style-type: none;
+	position: relative;
+	padding: 20px 1px 0 1px;
+	/*
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;*/
+    
+    /*float: left;*/
+    display: table-cell;
+    line-height: 0;
+}
+.tree_org li::before, .tree_org li::after{
+	content: '';
+	position: absolute; top: 0; right: 50%;
+	border-top: 1px solid #ccc;
+	width: 50%; height: 20px;
+}
+.tree_org li::after{
+	right: auto; left: 50%;
+	border-left: 1px solid #ccc;
+}
+.tree_org li:only-child::after, .tree_org li:only-child::before {
+	display: none;
+}
+.tree_org li:only-child{ padding-top: 0;}
+.tree_org li:first-child::before, .tree_org li:last-child::after{
+	border: 0 none;
+}
+.tree_org li:last-child::before{
+	border-right: 1px solid #ccc;
+	border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	-moz-border-radius: 0 5px 0 0;
+}
+.tree_org li:first-child::after{
+	border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+.tree_org ul ul::before{
+	content: '';
+	position: absolute; top: 0; left: 50%;
+	border-left: 1px solid #ccc;
+	width: 0; height: 20px;
+}
+.tree_org li a, .tree_drop{
+	background-color: #fff;
+    border: 1px solid #ccc;
+	padding: 5px 10px 5px 40px;
+	text-decoration: none;
+	color: #666;
+	font-family: arial, verdana, tahoma;
+	font-size: 11px;
+	display: inline-block;
+    position: relative;
+    text-align: left;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	/*
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;*/
+    height: 44px;
+    overflow: hidden;
+    white-space: nowrap;    
+}
+.tree_org li a img {
+    left: 4px;
+    position: absolute;
+    top: 4px;
+    width: 32px;
+    max-height: 32px;
+}
+/*.tree_org li a:hover i, .tree_org li a.active i { color: #fff; }*/
+.tree_org li a b, .tree_org li a span {
+    display: block;
+    line-height: 1.4;
+}
+.tree_org li a:after {
+    background-color: #f55;
+    border-radius: 0 0 5px 5px;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.tree_org li a.clr_1:after { background-color: #f55;}
+.tree_org li a.clr_2:after { background-color: #C34444;}
+.tree_org li a.clr_3:after { background-color: #a236bc;}
+.tree_org li a.clr_4:after { background-color: #FF8C00;}
+.tree_org li a.clr_5:after { background-color: #68C2DE;}
+.tree_org li a.clr_6:after { background-color: #3BCB3E;}
+
+.tree_org li a:hover, .tree_org li a:hover+ul li a,
+.tree_org li a.active {
+	background: #c8e4f8; color: #000; border: 1px solid #94a0b4;
+}
+.tree_org li a:hover+ul li::after, 
+.tree_org li a:hover+ul li::before, 
+.tree_org li a:hover+ul::before, 
+.tree_org li a:hover+ul ul::before{
+	border-color:  #94a0b4;
+}
+
+
+ul.vertical > li::before, ul.vertical > li::after {
+    border: 0 none;
+}
+ul.vertical > li {
+    
+    padding: 0;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    
+    /*float: none;*/
+    display: block;
+}
+ul.vertical li:hover {
+    background-color: #c8e4f8;    
+}
+ul.vertical li:hover a {
+    color: #000 !important;
+}
+ul.vertical li:first-child {
+}
+ul.vertical li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+ul.vertical li a::after {
+    display: none;
+}
+ul.vertical li a {
+    border: 0 none !important;
+    border-radius: 0;
+    /*background-color: transparent !important;*/
+    padding: 3px 5px;
+    color: #666 !important;
+    display: block;
+    text-align: center;
+    
+    height: 20px;
+}
+ul.vertical li::before, ul.vertical li::after { display: none; }
+ul.vertical img, ul.vertical li a span {
+    display: none;
+}
+ul.vertical li a b { font-weight: normal; }
+
+
+
+.tree_menu {
+    position: absolute; 
+    left: 0;
+    top: 100px;
+    background-color: #777;
+    box-shadow: 0 0 5px #777;    
+    padding: 8px 0 0;
+    z-index: 1000;
+}
+.tree_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+.tree_menu ul li {
+    border: 1px solid #e7e7e7;
+    padding: 2px 10px;
+    cursor: pointer;
+}
+.tree_menu ul li:hover {
+    background-color: #c8e4f8;
+}
+
+/* tree END */
+
+
+/* edit */
+
+.avatar {
+    border: 1px solid #ccc;
+    border-radius: 99px;
+    box-shadow: 0 0 8px #bbb;
+    margin: 0 10px;
+    width: 122px;
+    max-height: 122px;
+    cursor: pointer;
+}
+.avatar_w {
+    margin-top: 50px;
+}
+.avatar_w:hover::after {
+    color: #fff;
+    content: "Загрузить фото";
+    display: block;
+    font-size: 24px;
+    margin: 20px 0 0 10px;
+    text-align: center;
+    text-shadow: 0 0 6px #333;
+    width: 100%;
+}
+#drop_progress {
+    bottom: -17px;
+    left: 15px;
+    position: absolute;
+    right: 15px;
+}
+#drop_progress .fu_name {
+    font-size: 10px;
+    margin-top: 24px;
+    position: absolute;
+}
+
+.select2-container--default .select2-selection--single {
+    border-color: #ccc !important;
+}
+.select2-container .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 32px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 32px !important;
+}
+.select2-results__option img {
+    float: left;
+    margin-right: 5px;
+    width: 42px;
+    max-height: 42px;
+}
+.select2-results__option h5 {
+    margin: 0;
+}
+.select2-results__option p {
+    color: #777;
+    font-size: 11px;
+}
+.select2-results__option p {
+    line-height: 1.2;
+    margin: 0;
+}
+.select2-results__option p b {
+    color: #3399ff;
+    font-weight: normal;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] p,
+.select2-container--default .select2-results__option--highlighted[aria-selected] p b {
+    color: #fff;
+}
+.select2-results__option > div {
+    height: 42px;
+}
+.select2-results__option h5 {
+    height: 1.2em;
+}
+
+#struct_edit .b_psw {
+    cursor: pointer;
+    pointer-events: initial; /* включение реакции на :hover */
+}
+
+
+/* edit END */

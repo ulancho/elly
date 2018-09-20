@@ -1,0 +1,61 @@
+.slidepanel-container	{ border: 1px solid #9eafbf; border-collapse: collapse; }
+
+#slidepanel-left,
+#slidepanel-mover,
+#slidepanel-mover .mover-ico,
+.vsplitbar .mover-ico,
+#slidepanel-collapseleft,
+#slidepanel-collapseright,
+#slidepanel-right,
+#slidepanel-left-wrapper,
+#slidepanel-right-wrapper	{ position: absolute; overflow: hidden; margin: 0; padding: 0; }
+
+.slidepanel-vertical #slidepanel-left	{ background-color: #ffffff; top: 0; bottom: 0; left: 0; width: 36%; }
+.vsplitbar,
+.slidepanel-vertical #slidepanel-mover	{ overflow: visible; background: url('../../img/icons/mover-bg-vert.gif') top left repeat-y; top: 0; bottom: 0; left: 36%; width: 7px; z-index: 5; cursor: col-resize; border: 1px solid #9eafbf; border-collapse: collapse; border-width: 0 1px; }
+.vsplitbar .mover-ico,
+.slidepanel-vertical #slidepanel-mover .mover-ico	{ top: 50%; left: 0; margin-top: -4px; }
+.slidepanel-vertical #slidepanel-collapseleft,
+.slidepanel-vertical #slidepanel-collapseright	{ z-index: 5; top: 50%; left: 7px; width: 24px; height: 32px; margin-top: -16px; background-image: url('../../img/icons/hide-right.gif'); display: none; cursor: hand; cursor: pointer; }
+.slidepanel-vertical #slidepanel-collapseleft	{ background-image: url('../../img/icons/hide-left.gif'); left: -24px; }
+.slidepanel-vertical #slidepanel-right	{ top: 0; bottom: 0; right: 0; width: 64%; background: #e9eef2; }
+.slidepanel-vertical #slidepanel-left-wrapper, #slidepanel-right-wrapper	{ top: 0; bottom: 0; left: 0; right: 0; overflow: auto; }
+.slidepanel-vertical #slidepanel-right-wrapper	{ left: 9px; top: 5px; }
+
+.slidepanel-horizontal #slidepanel-left	{ background-color: #ffffff; top: 0; left: 0; right: 0; height: 30%; }
+.slidepanel-horizontal #slidepanel-mover	{ overflow: visible; background: url('../../img/icons/mover-bg-hor.gif') top left repeat-x; top: 30%; height: 7px; left: 0; right: 0; z-index: 5; cursor: row-resize; border: 1px solid #9eafbf; border-collapse: collapse; border-width: 1px 0; }
+.slidepanel-horizontal #slidepanel-mover .mover-ico	{ left: 50%; top: 0; margin-left: -4px; }
+.slidepanel-horizontal #slidepanel-collapseleft,
+.slidepanel-horizontal #slidepanel-collapseright	{ left: 50%; top: 7px; height: 24px; width: 32px; margin-left: -16px; background-image: url('../../img/icons/hide-bottom.gif'); display: none; cursor: hand; cursor: pointer; }
+.slidepanel-horizontal #slidepanel-collapseleft	{ background-image: url('../../img/icons/hide-top.gif'); top: -24px; }
+.slidepanel-horizontal #slidepanel-right	{ height: 70%; bottom: 0; right: 0; left: 0; }
+.slidepanel-horizontal #slidepanel-left-wrapper, #slidepanel-right-wrapper {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: auto;
+	//zoom:1;
+}
+.slidepanel-horizontal #slidepanel-right-wrapper	{ top: 8px; }
+
+#slidepanel-swith-vertical		{ width: 36px; height: 31px; position: absolute; top: 0; left: 0; background: url('../../img/icons/btn-verthor2.png') no-repeat -36px 0; }
+#slidepanel-swith-vertical:hover		{ background-position: -36px 50%; }
+.slidepanel-vertical #slidepanel-swith-vertical		{ background-position: -36px 100%; cursor:default;}
+
+#slidepanel-swith-horizontal	{ width: 36px; height: 31px; position: absolute; top: 0; right: 0; background: url('../../img/icons/btn-verthor2.png') no-repeat -72px 0; }
+#slidepanel-swith-horizontal:hover		{ background-position: -72px 50%; }
+.slidepanel-horizontal #slidepanel-swith-horizontal		{ background-position: -72px 100%; cursor:default; }
+
+#slidepanel-swith-full			{ width: 36px; height: 31px; position: absolute; top: 0; right: 100%; background: url('../../img/icons/btn-verthor2.png') no-repeat 0 0; }
+#slidepanel-swith-full:hover		{ background-position: 0 50%; }
+.slidepanel-full #slidepanel-swith-full		{ background-position: 0 100%; cursor:default; }
+
+/*
+.slidepanel-vertical #slidepanel-swith-vertical		{ background-position: -36px 0; }
+.slidepanel-vertical #slidepanel-swith-horizontal	{ background-position: right top; }
+.slidepanel-horizontal #slidepanel-swith-vertical		{ background-position: right bottom; }
+.slidepanel-horizontal #slidepanel-swith-horizontal	{ background-position: left bottom; }/**/
+
+#sp-switch-place	{ position: absolute; margin: 0; padding: 0; top: 8px; height: 31px; right: 10px; width: 72px; cursor:pointer; }
+

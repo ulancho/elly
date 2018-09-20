@@ -1,0 +1,16 @@
+.jp-popup-modal			{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #cccccc; z-index: 10000; display: none; }
+.jp-popup				{ padding: 0; margin: 0; position: absolute; left: 100px; text-align: left; top: 100px; xwidth: 580px; xheight: 245px; display: none; z-index: 10001; }
+.jp-popup ins			{ background: transparent; border: none !important; }
+.jp-popup .t,
+.jp-popup .b			{ bottom: 0px; left: 0px; overflow: hidden; position: absolute; right: 20px; top: 0px; z-index: 1; }
+.jp-popup .b			{ bottom: -20px; height: 20px; top: auto; }
+.jp-popup .t *,
+.jp-popup .b *			{ background: url('jquery.popup/popup-bg.png') no-repeat 0px 0px !important; height: 900px; left: 0px; position: absolute; top: 0px; width: 900px; }
+.jp-popup .l *			{ margin-left: -20px; }
+.jp-popup .t *			{ margin-top: -20px; }
+.jp-popup .r			{ left: auto; right: 0px; width: 20px; }
+.jp-popup .box			{ clear: both; display: block; margin: 0px 0px -20px; padding: 18px 27px 23px 23px; position: relative; z-index: 2; }
+.jp-popup .box .title	{ font-size: 120%; }
+.jp-popup .box textarea	{ width: 100%; height: 5em; margin: 0; }
+.jp-popup .close		{ display: block; border: none; position: absolute; right: 16px; top: 13px; width: 14px; height: 14px; background: url('jquery.popup/popup-close.png') no-repeat 0 0 !important; z-index: 3; cursor: hand; cursor: pointer; }
+.jp-popup .close:hover	{ background-position: top right ! important; }
